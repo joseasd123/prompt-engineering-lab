@@ -46,6 +46,16 @@ print(f"costo: ${result.cost_usd:.6f}")
 
 Ver [`examples/basic_usage.py`](examples/basic_usage.py) para un ejemplo completo.
 
+### Chat interactivo
+
+Para hablar con el modelo desde la terminal (en vez de una sola llamada fija):
+
+```bash
+python examples/chat.py
+```
+
+Abre un loop de conversación (mantiene el historial de mensajes); escribe `salir` para terminar.
+
 ## Tests
 
 ```bash
