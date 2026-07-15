@@ -1,3 +1,3 @@
-from .client import ClaudeClient, CallResult
+from .groq_client import GroqClient, CallResult
 
-__all__ = ["ClaudeClient", "CallResult"]
+__all__ = ["GroqClient", "CallResult"]
