@@ -56,6 +56,11 @@ python examples/chat.py
 
 Abre un loop de conversación (mantiene el historial de mensajes); escribe `salir` para terminar.
 
+## Material de estudio
+
+- [`docs/leccion-01-cliente-api.md`](docs/leccion-01-cliente-api.md) — lección que explica el diseño del cliente pieza por pieza (secretos/.env, wrapper, errores, backoff, tokens, costo, parámetros de generación, zero-shot vs few-shot, evaluación con métricas).
+- [`docs/quiz.html`](docs/quiz.html) — quiz de 13 preguntas con feedback instantáneo. Ábrelo con doble clic en el navegador.
+
 ## Tests
 
 ```bash
