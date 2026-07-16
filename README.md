@@ -56,6 +56,10 @@ python examples/chat.py
 
 Abre un loop de conversación (mantiene el historial de mensajes); escribe `salir` para terminar.
 
+## Experimentos
+
+- [`experiments/exp01_ingles_vs_espanol_colab.py`](experiments/exp01_ingles_vs_espanol_colab.py) — pensado para pegar en Google Colab. Compara el costo en tokens de preguntar directo en español vs preguntar en inglés y traducir la respuesta de vuelta con 3 métodos distintos (otra IA más chica, un tool de traducción, y un traductor clásico), sin gastar tokens del modelo principal en la traducción.
+
 ## Material de estudio
 
 - [`docs/leccion-01-cliente-api.md`](docs/leccion-01-cliente-api.md) — lección que explica el diseño del cliente pieza por pieza (secretos/.env, wrapper, errores, backoff, tokens, costo, parámetros de generación, zero-shot vs few-shot, evaluación con métricas).
