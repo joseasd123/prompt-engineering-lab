@@ -58,6 +58,7 @@ Abre un loop de conversación (mantiene el historial de mensajes); escribe `sali
 
 ## Experimentos
 
+- [`experiments/exp00_verificar_keys_colab.py`](experiments/exp00_verificar_keys_colab.py) — pensado para pegar en Google Colab. Prueba que tus keys de Groq, OpenAI y Hugging Face funcionen con una llamada mínima a cada una, sin gastar apenas tokens. Lee las keys de Colab Secrets (🔑) o las pide oculta con `getpass` si falta alguna.
 - [`experiments/exp01_ingles_vs_espanol_colab.py`](experiments/exp01_ingles_vs_espanol_colab.py) — pensado para pegar en Google Colab. Compara el costo en tokens de preguntar directo en español vs preguntar en inglés y traducir la respuesta de vuelta con 3 métodos distintos (otra IA más chica, un tool de traducción, y un traductor clásico), sin gastar tokens del modelo principal en la traducción.
 
 ## Material de estudio
