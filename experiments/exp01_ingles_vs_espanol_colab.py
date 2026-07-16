@@ -26,10 +26,27 @@ motores de traducción, así que la usamos para los métodos 2 y 3.
 # !pip install groq deep-translator pandas -q
 
 # %% CELDA 2 — API key (nunca la escribas directo en el código)
+#
+# Forma recomendada en Colab: usa "Secrets" (el ícono de llave 🔑 en la barra
+# lateral izquierda) -> "Add new secret" -> nombre GROQ_API_KEY, pega tu key
+# ahí y activa "Notebook access". Así la key vive en tu cuenta de Google, no
+# en el archivo del notebook (no se sube si compartes o subes el .ipynb).
 import os
-from getpass import getpass
 
-if "GROQ_API_KEY" not in os.environ:
+try:
+    from google.colab import userdata  # solo existe dentro de Colab
+
+    valor = userdata.get("GROQ_API_KEY")
+    if valor:
+        os.environ["GROQ_API_KEY"] = valor
+except Exception:
+    pass  # no estamos en Colab, o el secret no está configurado todavía
+
+# Si no se encontró el secret (ej. corriendo fuera de Colab), la pide oculta.
+# Nunca pongas la key como texto dentro del string del prompt.
+if not os.environ.get("GROQ_API_KEY"):
+    from getpass import getpass
+
     os.environ["GROQ_API_KEY"] = getpass("Pega tu GROQ_API_KEY (no se mostrará en pantalla): ")
 
 # %% CELDA 3 — Cliente Groq mínimo (mismo patrón de prompt-engineering-lab:
