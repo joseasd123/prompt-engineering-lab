@@ -14,7 +14,11 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from prompts import PROMPT_VERSIONS
+try:
+    from .prompts import PROMPT_VERSIONS  # cuando pytest lo importa como parte del paquete projects.*
+except ImportError:
+    from prompts import PROMPT_VERSIONS  # cuando se corre directo: python evaluate.py
+
 from prompt_engineering_lab import GroqClient
 
 DATASET_PATH = Path(__file__).parent / "dataset.json"

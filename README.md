@@ -1,77 +1,123 @@
 # prompt-engineering-lab
 
-Laboratorio de prompt engineering con un cliente Python reutilizable para la API de Groq.
+**English | [Español](README.es.md)**
+
+A prompt-engineering lab built around a reusable Python client for the Groq API, plus two real use cases solved end-to-end and a small prompt-evaluation framework with reproducible results.
+
+## What's inside
+
+| Piece | What it is |
+|---|---|
+| `prompt_engineering_lab/` | Reusable `GroqClient`: typed error handling, retries, token counting, per-call cost. |
+| `projects/proyecto_a_clasificador_tickets/` | **Project A** — support-ticket classifier (3 prompt versions vs 50 hand-labeled cases). |
+| `projects/proyecto_b_extractor_datos/` | **Project B** — data extractor + evaluation framework (YAML test cases) + a short-vs-long system-prompt experiment. |
+| `docs/` | Study material (lesson + walkthrough, in Spanish) and a self-check quiz. |
+| `tests/`, `projects/**/test_*.py` | 20 pure unit tests (no network / no API key). |
 
 ## `GroqClient`
 
-`prompt_engineering_lab/groq_client.py` envuelve el SDK oficial de Groq (`groq`) con:
+`prompt_engineering_lab/groq_client.py` wraps the official Groq SDK (`groq`) with:
 
-- **Manejo de errores tipado**: distingue errores no reintentables (`BadRequestError`, `AuthenticationError`, `PermissionDeniedError`, `NotFoundError`) de errores transitorios (`RateLimitError`, `APIConnectionError`, errores 5xx).
-- **Reintentos con backoff exponencial + jitter** para errores transitorios (configurable: `max_retries`, `base_delay`, `max_delay`).
-- **Estimación de tokens**: `count_tokens()` da una aproximación (~4 caracteres/token) antes de enviar una request. Groq no expone un endpoint de conteo real como Anthropic; el conteo exacto viene en `CallResult` después de la llamada (`prompt_tokens`, `completion_tokens`, `total_tokens`).
-- **Costo por llamada**: cada `complete()` devuelve un `CallResult` con el costo estimado en USD según la tabla `PRICING` (por defecto en $0.00 — actualízala con los precios reales de [groq.com/pricing](https://groq.com/pricing), que cambian con frecuencia), y acumula el total de la sesión (`client.total_cost_usd`, `client.total_calls`).
+- **Typed error handling** — separates non-retryable errors (`BadRequestError`, `AuthenticationError`, `PermissionDeniedError`, `NotFoundError`) from transient ones (`RateLimitError`, `APIConnectionError`, 5xx).
+- **Retries with exponential backoff + jitter** for transient errors (configurable: `max_retries`, `base_delay`, `max_delay`).
+- **Token estimation** — `count_tokens()` gives a rough pre-call estimate (~4 chars/token); exact counts come back in `CallResult` after the call (`prompt_tokens`, `completion_tokens`, `total_tokens`).
+- **Per-call cost** — every `complete()` returns a `CallResult` with the estimated USD cost from the `PRICING` table (defaults to $0.00 — update it with the real numbers from [groq.com/pricing](https://groq.com/pricing), which change often), and accumulates the session total (`client.total_cost_usd`, `client.total_calls`).
 
-## Instalación
+## Install
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Configura tu credencial (nunca la hardcodees en el código ni la subas a git):
+Set your credential (never hardcode it or commit it):
 
 ```bash
 cp .env.example .env
-# edita .env y agrega tu GROQ_API_KEY
+# edit .env and add your GROQ_API_KEY
 ```
 
-`.env` está en `.gitignore` — nunca se sube al repo.
+`.env` is in `.gitignore` — it never gets committed.
 
-## Uso
+## Usage
 
 ```python
 from dotenv import load_dotenv
 from prompt_engineering_lab import GroqClient
 
 load_dotenv()
-client = GroqClient()  # usa GROQ_API_KEY del entorno
+client = GroqClient()  # reads GROQ_API_KEY from the environment
 
 result = client.complete(
-    messages=[{"role": "user", "content": "¿Qué es prompt engineering?"}],
+    messages=[{"role": "user", "content": "What is prompt engineering?"}],
     max_tokens=200,
 )
 
 print(result.text)
-print(f"costo: ${result.cost_usd:.6f}")
+print(f"cost: ${result.cost_usd:.6f}")
 ```
 
-Ver [`examples/basic_usage.py`](examples/basic_usage.py) para un ejemplo completo.
+See [`examples/basic_usage.py`](examples/basic_usage.py) for a full example, or [`examples/chat.py`](examples/chat.py) for an interactive terminal chat loop.
 
-### Chat interactivo
+## Projects
 
-Para hablar con el modelo desde la terminal (en vez de una sola llamada fija):
+### Project A — Support-ticket classifier
+[`projects/proyecto_a_clasificador_tickets/`](projects/proyecto_a_clasificador_tickets/)
+
+Classifies free-form text into one of 5 categories (billing, tech support, account/access, cancellation, other) with structured JSON output. Compares 3 prompt versions (minimal zero-shot → guided zero-shot with a taxonomy → few-shot) against 50 hand-labeled tickets, measuring accuracy, cost and tokens per version.
 
 ```bash
-python examples/chat.py
+python projects/proyecto_a_clasificador_tickets/evaluate.py
 ```
 
-Abre un loop de conversación (mantiene el historial de mensajes); escribe `salir` para terminar.
+### Project B — Data extractor + evaluation framework
+[`projects/proyecto_b_extractor_datos/`](projects/proyecto_b_extractor_datos/)
 
-## Proyectos
+Extracts `producto`, `cantidad` and `precio_unitario` from free-form purchase descriptions (informal invoices), including cases that only give the total price and require computing the unit price. Compares zero-shot vs few-shot against 20 hand-labeled cases defined in [`casos.yaml`](projects/proyecto_b_extractor_datos/casos.yaml), scoring accuracy per field and per full case.
 
-- [`projects/proyecto_a_clasificador_tickets/`](projects/proyecto_a_clasificador_tickets/) — **Proyecto A: clasificador de tickets de soporte.** Clasifica texto libre en una de 5 categorías (facturación, soporte técnico, cuenta/acceso, cancelación, otro) con salida JSON estructurada. Compara 3 versiones de prompt (zero-shot mínimo → zero-shot guiado con taxonomía → few-shot) contra 50 tickets etiquetados a mano, midiendo accuracy, costo y tokens de cada versión. Correr con `python projects/proyecto_a_clasificador_tickets/evaluate.py`.
+This is also the **mini evaluation framework**: test cases live in a YAML file (data separate from code), and `evaluate.py` runs every prompt version in `PROMPT_VERSIONS` and prints a comparison table.
 
-## Experimentos
+```bash
+python projects/proyecto_b_extractor_datos/evaluate.py            # zero-shot vs few-shot
+python projects/proyecto_b_extractor_datos/experimento_system.py  # short vs long system prompt (2x2)
+```
 
-- [`experiments/exp00_verificar_keys_colab.py`](experiments/exp00_verificar_keys_colab.py) — pensado para pegar en Google Colab. Prueba que tus keys de Groq, OpenAI y Hugging Face funcionen con una llamada mínima a cada una, sin gastar apenas tokens. Lee las keys de Colab Secrets (🔑) o las pide oculta con `getpass` si falta alguna.
-- [`experiments/exp00b_descubrir_modelos_hf_colab.py`](experiments/exp00b_descubrir_modelos_hf_colab.py) — pensado para pegar en Google Colab. Prueba en vivo una tanda de modelos de Hugging Face contra tu token (ya que la disponibilidad gratuita cambia seguido) y reporta cuáles funcionan hoy.
-- [`experiments/exp01_ingles_vs_espanol_colab.py`](experiments/exp01_ingles_vs_espanol_colab.py) — pensado para pegar en Google Colab. Compara el costo en tokens de preguntar directo en español vs preguntar en inglés y traducir la respuesta de vuelta con 3 métodos distintos (otra IA más chica, un tool de traducción, y un traductor clásico), sin gastar tokens del modelo principal en la traducción.
-- [`experiments/exp02_chat_bilingue_vs_espanol_colab.py`](experiments/exp02_chat_bilingue_vs_espanol_colab.py) — chat interactivo (pensado para Google Colab): en cada turno compara español directo vs traducir tu entrada al inglés + preguntar + traducir la respuesta de vuelta, mostrando ambas respuestas y los tokens gastados por cada camino en vivo.
+## Results
 
-## Material de estudio
+Comparison tables (prompt version × accuracy × cost), generated by running each script against the real Groq API (model `llama-3.3-70b-versatile`, free tier → real cost $0; the cost columns exist for when a paid model is used).
 
-- [`docs/leccion-01-cliente-api.md`](docs/leccion-01-cliente-api.md) — lección que explica el diseño del cliente pieza por pieza (secretos/.env, wrapper, errores, backoff, tokens, costo, parámetros de generación, zero-shot vs few-shot, evaluación con métricas).
-- [`docs/proyecto-a-clasificador-tickets.md`](docs/proyecto-a-clasificador-tickets.md) — recorrido paso a paso del Proyecto A (clasificador de tickets) y los resultados reales de correrlo: por qué v1 falla, por qué v2 da el salto grande, y por qué v3 (few-shot) no mejora pero cuesta más tokens.
-- [`docs/quiz.html`](docs/quiz.html) — quiz de 13 preguntas con feedback instantáneo. Ábrelo con doble clic en el navegador.
+**Project A — ticket classifier** (50 cases, accuracy = ticket classified correctly):
+
+| Prompt | Accuracy | Total cost | Cost / 1,000 calls | Avg. tokens |
+|---|---|---|---|---|
+| v1 minimal zero-shot | 2% | $0.000000 | $0.0000 | 106 |
+| v2 guided zero-shot | 96% | $0.000000 | $0.0000 | 258 |
+| v3 few-shot | 96% | $0.000000 | $0.0000 | 416 |
+
+**Project B — data extractor** (20 cases; per-field = of the 3 extracted fields, per-case = all 3 right at once):
+
+| Prompt | Accuracy (field) | Accuracy (case) | Total cost | Cost / 1,000 calls | Avg. tokens |
+|---|---|---|---|---|---|
+| zero-shot | 100% | 100% | $0.000000 | $0.0000 | 226 |
+| few-shot | 100% | 100% | $0.000000 | $0.0000 | 376 |
+
+**Experiment — short vs long (over-specified) system prompt** (Project B, 2×2: strategy × system prompt):
+
+| Strategy | System prompt | Accuracy (field) | Accuracy (case) | Avg. tokens |
+|---|---|---|---|---|
+| zero-shot | short | 100% | 100% | 226 |
+| zero-shot | long | 100% | 100% | 252 |
+| few-shot | short | 100% | 100% | 376 |
+| few-shot | long | 98% | 95% | 402 |
+
+**Takeaways:**
+- **Project A:** a clear instruction (v2) is what pays off — few-shot (v3) doesn't beat v2 but costs 61% more tokens.
+- **Project B:** the winning combo is a *short* system prompt. The long, over-specified one (which spells out "divide the total by the quantity") never improves accuracy, costs ~10% more tokens, and in few-shot it actively **breaks** one case: `factura_monitor` ("2 monitores LG por $189.990 **c/u**") gets its already-unit price divided by 2. Concrete evidence that adding more instructions and more examples isn't free — it can introduce new biases, not just improve accuracy.
+
+## Study material
+
+- [`docs/leccion-01-cliente-api.md`](docs/leccion-01-cliente-api.md) *(Spanish)* — piece-by-piece walkthrough of the client design (secrets/.env, wrapper, errors, backoff, tokens, cost, generation params, zero-shot vs few-shot, metric-based evaluation).
+- [`docs/proyecto-a-clasificador-tickets.md`](docs/proyecto-a-clasificador-tickets.md) *(Spanish)* — step-by-step tour of Project A and its real results.
+- [`docs/quiz.html`](docs/quiz.html) — 13-question quiz with instant feedback. Open it in a browser.
 
 ## Tests
 
@@ -80,8 +126,12 @@ pip install pytest
 pytest
 ```
 
-Los tests cubren el cálculo de costos y la estimación de tokens de forma pura (sin llamadas de red).
+20 pure tests (no network calls / no API key): the client's cost calculation and token estimation, plus the response parsing / field matching of Projects A and B.
 
-## Modelo por defecto
+## Roadmap
 
-`llama-3.3-70b-versatile`. Los precios (USD por 1M tokens) están en `PRICING` dentro de `groq_client.py` — actualízalos según [groq.com/pricing](https://groq.com/pricing).
+- Replicate the exercises with a local open-source model via [Ollama](https://ollama.com/) to compare model behavior against Groq's hosted Llama.
+
+## Default model
+
+`llama-3.3-70b-versatile`. Prices (USD per 1M tokens) live in `PRICING` inside `groq_client.py` — update them from [groq.com/pricing](https://groq.com/pricing).

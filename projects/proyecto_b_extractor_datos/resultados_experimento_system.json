@@ -1,0 +1,1562 @@
+{
+  "zero_shot__corto": {
+    "accuracy_campo": 1.0,
+    "accuracy_caso": 1.0,
+    "total": 20,
+    "costo_usd": 0.0,
+    "costo_por_1000": 0.0,
+    "tokens_prom": 225.7,
+    "detalle": [
+      {
+        "id": "factura_teclado",
+        "esperado": {
+          "producto": "teclados mecánicos",
+          "cantidad": 3,
+          "precio_unitario": 45990
+        },
+        "predicho": {
+          "producto": "teclados mecánicos",
+          "cantidad": 3,
+          "precio_unitario": 45990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_mouse",
+        "esperado": {
+          "producto": "mouse inalámbrico",
+          "cantidad": 1,
+          "precio_unitario": 12500
+        },
+        "predicho": {
+          "producto": "un mouse inalámbrico",
+          "cantidad": 1,
+          "precio_unitario": 12500
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_monitor",
+        "esperado": {
+          "producto": "monitores LG",
+          "cantidad": 2,
+          "precio_unitario": 189990
+        },
+        "predicho": {
+          "producto": "monitores lg",
+          "cantidad": 2,
+          "precio_unitario": 189990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_total",
+        "esperado": {
+          "producto": "sillas de oficina",
+          "cantidad": 2,
+          "precio_unitario": 79990
+        },
+        "predicho": {
+          "producto": "sillas de oficina",
+          "cantidad": 2,
+          "precio_unitario": 79990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_impresora",
+        "esperado": {
+          "producto": "impresora láser",
+          "cantidad": 1,
+          "precio_unitario": 89990
+        },
+        "predicho": {
+          "producto": "una impresora láser",
+          "cantidad": 1,
+          "precio_unitario": 89990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_audifonos",
+        "esperado": {
+          "producto": "audífonos bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 15990
+        },
+        "predicho": {
+          "producto": "audífonos bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 15990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_webcam_total",
+        "esperado": {
+          "producto": "webcams HD",
+          "cantidad": 3,
+          "precio_unitario": 29990
+        },
+        "predicho": {
+          "producto": "webcams hd",
+          "cantidad": 3,
+          "precio_unitario": 29990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_cable",
+        "esperado": {
+          "producto": "cables HDMI",
+          "cantidad": 5,
+          "precio_unitario": 3990
+        },
+        "predicho": {
+          "producto": "cables hdmi",
+          "cantidad": 5,
+          "precio_unitario": 3990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_disco",
+        "esperado": {
+          "producto": "disco duro externo de 1TB",
+          "cantidad": 1,
+          "precio_unitario": 54990
+        },
+        "predicho": {
+          "producto": "un disco duro externo de 1tb",
+          "cantidad": 1,
+          "precio_unitario": 54990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_gamer",
+        "esperado": {
+          "producto": "sillas gamer",
+          "cantidad": 2,
+          "precio_unitario": 129990
+        },
+        "predicho": {
+          "producto": "sillas gamer",
+          "cantidad": 2,
+          "precio_unitario": 129990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_router_total",
+        "esperado": {
+          "producto": "routers wifi",
+          "cantidad": 2,
+          "precio_unitario": 39990
+        },
+        "predicho": {
+          "producto": "routers wifi",
+          "cantidad": 2,
+          "precio_unitario": 39990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_lampara",
+        "esperado": {
+          "producto": "lámpara de escritorio LED",
+          "cantidad": 1,
+          "precio_unitario": 17990
+        },
+        "predicho": {
+          "producto": "lámpara de escritorio led",
+          "cantidad": 1,
+          "precio_unitario": 17990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_mochila",
+        "esperado": {
+          "producto": "mochilas para notebook",
+          "cantidad": 3,
+          "precio_unitario": 24990
+        },
+        "predicho": {
+          "producto": "tres mochilas para notebook",
+          "cantidad": 3,
+          "precio_unitario": 24990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_parlante_total",
+        "esperado": {
+          "producto": "parlantes bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 49990
+        },
+        "predicho": {
+          "producto": "parlantes bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 49990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_teclado_rgb",
+        "esperado": {
+          "producto": "teclado mecánico RGB",
+          "cantidad": 1,
+          "precio_unitario": 52990
+        },
+        "predicho": {
+          "producto": "un teclado mecánico rgb",
+          "cantidad": 1,
+          "precio_unitario": 52990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_soporte",
+        "esperado": {
+          "producto": "soportes para monitor",
+          "cantidad": 6,
+          "precio_unitario": 9990
+        },
+        "predicho": {
+          "producto": "soportes para monitor",
+          "cantidad": 6,
+          "precio_unitario": 9990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_pendrive",
+        "esperado": {
+          "producto": "pendrives de 64GB",
+          "cantidad": 2,
+          "precio_unitario": 8990
+        },
+        "predicho": {
+          "producto": "2 pendrives de 64gb",
+          "cantidad": 2,
+          "precio_unitario": 8990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_ergo",
+        "esperado": {
+          "producto": "silla ergonómica",
+          "cantidad": 1,
+          "precio_unitario": 219990
+        },
+        "predicho": {
+          "producto": "una silla ergonómica",
+          "cantidad": 1,
+          "precio_unitario": 219990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_cargador_total",
+        "esperado": {
+          "producto": "cargadores USB-C",
+          "cantidad": 5,
+          "precio_unitario": 9990
+        },
+        "predicho": {
+          "producto": "cargadores usb-c",
+          "cantidad": 5,
+          "precio_unitario": 9990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_notebook",
+        "esperado": {
+          "producto": "notebook Lenovo de 15 pulgadas",
+          "cantidad": 1,
+          "precio_unitario": 459990
+        },
+        "predicho": {
+          "producto": "un notebook lenovo de 15 pulgadas",
+          "cantidad": 1,
+          "precio_unitario": 459990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      }
+    ]
+  },
+  "zero_shot__largo": {
+    "accuracy_campo": 1.0,
+    "accuracy_caso": 1.0,
+    "total": 20,
+    "costo_usd": 0.0,
+    "costo_por_1000": 0.0,
+    "tokens_prom": 251.7,
+    "detalle": [
+      {
+        "id": "factura_teclado",
+        "esperado": {
+          "producto": "teclados mecánicos",
+          "cantidad": 3,
+          "precio_unitario": 45990
+        },
+        "predicho": {
+          "producto": "teclados mecánicos",
+          "cantidad": 3,
+          "precio_unitario": 45990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_mouse",
+        "esperado": {
+          "producto": "mouse inalámbrico",
+          "cantidad": 1,
+          "precio_unitario": 12500
+        },
+        "predicho": {
+          "producto": "un mouse inalámbrico",
+          "cantidad": 1,
+          "precio_unitario": 12500
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_monitor",
+        "esperado": {
+          "producto": "monitores LG",
+          "cantidad": 2,
+          "precio_unitario": 189990
+        },
+        "predicho": {
+          "producto": "monitores lg",
+          "cantidad": 2,
+          "precio_unitario": 189990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_total",
+        "esperado": {
+          "producto": "sillas de oficina",
+          "cantidad": 2,
+          "precio_unitario": 79990
+        },
+        "predicho": {
+          "producto": "sillas de oficina",
+          "cantidad": 2,
+          "precio_unitario": 79990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_impresora",
+        "esperado": {
+          "producto": "impresora láser",
+          "cantidad": 1,
+          "precio_unitario": 89990
+        },
+        "predicho": {
+          "producto": "una impresora láser",
+          "cantidad": 1,
+          "precio_unitario": 89990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_audifonos",
+        "esperado": {
+          "producto": "audífonos bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 15990
+        },
+        "predicho": {
+          "producto": "audífonos bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 15990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_webcam_total",
+        "esperado": {
+          "producto": "webcams HD",
+          "cantidad": 3,
+          "precio_unitario": 29990
+        },
+        "predicho": {
+          "producto": "webcams hd",
+          "cantidad": 3,
+          "precio_unitario": 29990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_cable",
+        "esperado": {
+          "producto": "cables HDMI",
+          "cantidad": 5,
+          "precio_unitario": 3990
+        },
+        "predicho": {
+          "producto": "cables hdmi",
+          "cantidad": 5,
+          "precio_unitario": 3990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_disco",
+        "esperado": {
+          "producto": "disco duro externo de 1TB",
+          "cantidad": 1,
+          "precio_unitario": 54990
+        },
+        "predicho": {
+          "producto": "un disco duro externo de 1tb",
+          "cantidad": 1,
+          "precio_unitario": 54990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_gamer",
+        "esperado": {
+          "producto": "sillas gamer",
+          "cantidad": 2,
+          "precio_unitario": 129990
+        },
+        "predicho": {
+          "producto": "sillas gamer",
+          "cantidad": 2,
+          "precio_unitario": 129990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_router_total",
+        "esperado": {
+          "producto": "routers wifi",
+          "cantidad": 2,
+          "precio_unitario": 39990
+        },
+        "predicho": {
+          "producto": "routers wifi",
+          "cantidad": 2,
+          "precio_unitario": 39990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_lampara",
+        "esperado": {
+          "producto": "lámpara de escritorio LED",
+          "cantidad": 1,
+          "precio_unitario": 17990
+        },
+        "predicho": {
+          "producto": "lámpara de escritorio led",
+          "cantidad": 1,
+          "precio_unitario": 17990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_mochila",
+        "esperado": {
+          "producto": "mochilas para notebook",
+          "cantidad": 3,
+          "precio_unitario": 24990
+        },
+        "predicho": {
+          "producto": "tres mochilas para notebook",
+          "cantidad": 3,
+          "precio_unitario": 24990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_parlante_total",
+        "esperado": {
+          "producto": "parlantes bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 49990
+        },
+        "predicho": {
+          "producto": "parlantes bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 49990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_teclado_rgb",
+        "esperado": {
+          "producto": "teclado mecánico RGB",
+          "cantidad": 1,
+          "precio_unitario": 52990
+        },
+        "predicho": {
+          "producto": "un teclado mecánico rgb",
+          "cantidad": 1,
+          "precio_unitario": 52990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_soporte",
+        "esperado": {
+          "producto": "soportes para monitor",
+          "cantidad": 6,
+          "precio_unitario": 9990
+        },
+        "predicho": {
+          "producto": "soportes para monitor",
+          "cantidad": 6,
+          "precio_unitario": 9990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_pendrive",
+        "esperado": {
+          "producto": "pendrives de 64GB",
+          "cantidad": 2,
+          "precio_unitario": 8990
+        },
+        "predicho": {
+          "producto": "2 pendrives de 64gb",
+          "cantidad": 2,
+          "precio_unitario": 8990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_ergo",
+        "esperado": {
+          "producto": "silla ergonómica",
+          "cantidad": 1,
+          "precio_unitario": 219990
+        },
+        "predicho": {
+          "producto": "una silla ergonómica",
+          "cantidad": 1,
+          "precio_unitario": 219990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_cargador_total",
+        "esperado": {
+          "producto": "cargadores USB-C",
+          "cantidad": 5,
+          "precio_unitario": 9990
+        },
+        "predicho": {
+          "producto": "cargadores usb-c",
+          "cantidad": 5,
+          "precio_unitario": 9990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_notebook",
+        "esperado": {
+          "producto": "notebook Lenovo de 15 pulgadas",
+          "cantidad": 1,
+          "precio_unitario": 459990
+        },
+        "predicho": {
+          "producto": "un notebook lenovo de 15 pulgadas",
+          "cantidad": 1,
+          "precio_unitario": 459990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      }
+    ]
+  },
+  "few_shot__corto": {
+    "accuracy_campo": 1.0,
+    "accuracy_caso": 1.0,
+    "total": 20,
+    "costo_usd": 0.0,
+    "costo_por_1000": 0.0,
+    "tokens_prom": 376.5,
+    "detalle": [
+      {
+        "id": "factura_teclado",
+        "esperado": {
+          "producto": "teclados mecánicos",
+          "cantidad": 3,
+          "precio_unitario": 45990
+        },
+        "predicho": {
+          "producto": "teclados mecánicos",
+          "cantidad": 3,
+          "precio_unitario": 45990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_mouse",
+        "esperado": {
+          "producto": "mouse inalámbrico",
+          "cantidad": 1,
+          "precio_unitario": 12500
+        },
+        "predicho": {
+          "producto": "mouse inalámbrico",
+          "cantidad": 1,
+          "precio_unitario": 12500
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_monitor",
+        "esperado": {
+          "producto": "monitores LG",
+          "cantidad": 2,
+          "precio_unitario": 189990
+        },
+        "predicho": {
+          "producto": "monitores LG",
+          "cantidad": 2,
+          "precio_unitario": 189990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_total",
+        "esperado": {
+          "producto": "sillas de oficina",
+          "cantidad": 2,
+          "precio_unitario": 79990
+        },
+        "predicho": {
+          "producto": "sillas de oficina",
+          "cantidad": 2,
+          "precio_unitario": 79990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_impresora",
+        "esperado": {
+          "producto": "impresora láser",
+          "cantidad": 1,
+          "precio_unitario": 89990
+        },
+        "predicho": {
+          "producto": "impresora láser",
+          "cantidad": 1,
+          "precio_unitario": 89990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_audifonos",
+        "esperado": {
+          "producto": "audífonos bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 15990
+        },
+        "predicho": {
+          "producto": "audífonos bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 15990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_webcam_total",
+        "esperado": {
+          "producto": "webcams HD",
+          "cantidad": 3,
+          "precio_unitario": 29990
+        },
+        "predicho": {
+          "producto": "webcams hd",
+          "cantidad": 3,
+          "precio_unitario": 29990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_cable",
+        "esperado": {
+          "producto": "cables HDMI",
+          "cantidad": 5,
+          "precio_unitario": 3990
+        },
+        "predicho": {
+          "producto": "cables hdmi",
+          "cantidad": 5,
+          "precio_unitario": 3990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_disco",
+        "esperado": {
+          "producto": "disco duro externo de 1TB",
+          "cantidad": 1,
+          "precio_unitario": 54990
+        },
+        "predicho": {
+          "producto": "disco duro externo de 1tb",
+          "cantidad": 1,
+          "precio_unitario": 54990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_gamer",
+        "esperado": {
+          "producto": "sillas gamer",
+          "cantidad": 2,
+          "precio_unitario": 129990
+        },
+        "predicho": {
+          "producto": "sillas gamer",
+          "cantidad": 2,
+          "precio_unitario": 129990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_router_total",
+        "esperado": {
+          "producto": "routers wifi",
+          "cantidad": 2,
+          "precio_unitario": 39990
+        },
+        "predicho": {
+          "producto": "routers wifi",
+          "cantidad": 2,
+          "precio_unitario": 39990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_lampara",
+        "esperado": {
+          "producto": "lámpara de escritorio LED",
+          "cantidad": 1,
+          "precio_unitario": 17990
+        },
+        "predicho": {
+          "producto": "lámpara de escritorio led",
+          "cantidad": 1,
+          "precio_unitario": 17990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_mochila",
+        "esperado": {
+          "producto": "mochilas para notebook",
+          "cantidad": 3,
+          "precio_unitario": 24990
+        },
+        "predicho": {
+          "producto": "mochilas para notebook",
+          "cantidad": 3,
+          "precio_unitario": 24990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_parlante_total",
+        "esperado": {
+          "producto": "parlantes bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 49990
+        },
+        "predicho": {
+          "producto": "parlantes bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 49990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_teclado_rgb",
+        "esperado": {
+          "producto": "teclado mecánico RGB",
+          "cantidad": 1,
+          "precio_unitario": 52990
+        },
+        "predicho": {
+          "producto": "un teclado mecánico rgb",
+          "cantidad": 1,
+          "precio_unitario": 52990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_soporte",
+        "esperado": {
+          "producto": "soportes para monitor",
+          "cantidad": 6,
+          "precio_unitario": 9990
+        },
+        "predicho": {
+          "producto": "soportes para monitor",
+          "cantidad": 6,
+          "precio_unitario": 9990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_pendrive",
+        "esperado": {
+          "producto": "pendrives de 64GB",
+          "cantidad": 2,
+          "precio_unitario": 8990
+        },
+        "predicho": {
+          "producto": "pendrives de 64GB",
+          "cantidad": 2,
+          "precio_unitario": 8990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_ergo",
+        "esperado": {
+          "producto": "silla ergonómica",
+          "cantidad": 1,
+          "precio_unitario": 219990
+        },
+        "predicho": {
+          "producto": "silla ergonómica",
+          "cantidad": 1,
+          "precio_unitario": 219990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_cargador_total",
+        "esperado": {
+          "producto": "cargadores USB-C",
+          "cantidad": 5,
+          "precio_unitario": 9990
+        },
+        "predicho": {
+          "producto": "cargadores usb-c",
+          "cantidad": 5,
+          "precio_unitario": 9990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_notebook",
+        "esperado": {
+          "producto": "notebook Lenovo de 15 pulgadas",
+          "cantidad": 1,
+          "precio_unitario": 459990
+        },
+        "predicho": {
+          "producto": "notebook lenovo de 15 pulgadas",
+          "cantidad": 1,
+          "precio_unitario": 459990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      }
+    ]
+  },
+  "few_shot__largo": {
+    "accuracy_campo": 0.9833333333333333,
+    "accuracy_caso": 0.95,
+    "total": 20,
+    "costo_usd": 0.0,
+    "costo_por_1000": 0.0,
+    "tokens_prom": 402.45,
+    "detalle": [
+      {
+        "id": "factura_teclado",
+        "esperado": {
+          "producto": "teclados mecánicos",
+          "cantidad": 3,
+          "precio_unitario": 45990
+        },
+        "predicho": {
+          "producto": "teclados mecánicos",
+          "cantidad": 3,
+          "precio_unitario": 45990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_mouse",
+        "esperado": {
+          "producto": "mouse inalámbrico",
+          "cantidad": 1,
+          "precio_unitario": 12500
+        },
+        "predicho": {
+          "producto": "mouse inalámbrico",
+          "cantidad": 1,
+          "precio_unitario": 12500
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_monitor",
+        "esperado": {
+          "producto": "monitores LG",
+          "cantidad": 2,
+          "precio_unitario": 189990
+        },
+        "predicho": {
+          "producto": "monitores LG",
+          "cantidad": 2,
+          "precio_unitario": 94995
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": false
+        },
+        "correcto": false
+      },
+      {
+        "id": "factura_silla_total",
+        "esperado": {
+          "producto": "sillas de oficina",
+          "cantidad": 2,
+          "precio_unitario": 79990
+        },
+        "predicho": {
+          "producto": "sillas de oficina",
+          "cantidad": 2,
+          "precio_unitario": 79990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_impresora",
+        "esperado": {
+          "producto": "impresora láser",
+          "cantidad": 1,
+          "precio_unitario": 89990
+        },
+        "predicho": {
+          "producto": "impresora láser",
+          "cantidad": 1,
+          "precio_unitario": 89990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_audifonos",
+        "esperado": {
+          "producto": "audífonos bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 15990
+        },
+        "predicho": {
+          "producto": "audífonos bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 15990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_webcam_total",
+        "esperado": {
+          "producto": "webcams HD",
+          "cantidad": 3,
+          "precio_unitario": 29990
+        },
+        "predicho": {
+          "producto": "webcams hd",
+          "cantidad": 3,
+          "precio_unitario": 29990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_cable",
+        "esperado": {
+          "producto": "cables HDMI",
+          "cantidad": 5,
+          "precio_unitario": 3990
+        },
+        "predicho": {
+          "producto": "cables hdmi",
+          "cantidad": 5,
+          "precio_unitario": 3990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_disco",
+        "esperado": {
+          "producto": "disco duro externo de 1TB",
+          "cantidad": 1,
+          "precio_unitario": 54990
+        },
+        "predicho": {
+          "producto": "disco duro externo de 1tb",
+          "cantidad": 1,
+          "precio_unitario": 54990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_gamer",
+        "esperado": {
+          "producto": "sillas gamer",
+          "cantidad": 2,
+          "precio_unitario": 129990
+        },
+        "predicho": {
+          "producto": "sillas gamer",
+          "cantidad": 2,
+          "precio_unitario": 129990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_router_total",
+        "esperado": {
+          "producto": "routers wifi",
+          "cantidad": 2,
+          "precio_unitario": 39990
+        },
+        "predicho": {
+          "producto": "routers wifi",
+          "cantidad": 2,
+          "precio_unitario": 39990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_lampara",
+        "esperado": {
+          "producto": "lámpara de escritorio LED",
+          "cantidad": 1,
+          "precio_unitario": 17990
+        },
+        "predicho": {
+          "producto": "lámpara de escritorio led",
+          "cantidad": 1,
+          "precio_unitario": 17990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_mochila",
+        "esperado": {
+          "producto": "mochilas para notebook",
+          "cantidad": 3,
+          "precio_unitario": 24990
+        },
+        "predicho": {
+          "producto": "mochilas para notebook",
+          "cantidad": 3,
+          "precio_unitario": 24990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_parlante_total",
+        "esperado": {
+          "producto": "parlantes bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 49990
+        },
+        "predicho": {
+          "producto": "parlantes bluetooth",
+          "cantidad": 4,
+          "precio_unitario": 49990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_teclado_rgb",
+        "esperado": {
+          "producto": "teclado mecánico RGB",
+          "cantidad": 1,
+          "precio_unitario": 52990
+        },
+        "predicho": {
+          "producto": "teclado mecánico rgb",
+          "cantidad": 1,
+          "precio_unitario": 52990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_soporte",
+        "esperado": {
+          "producto": "soportes para monitor",
+          "cantidad": 6,
+          "precio_unitario": 9990
+        },
+        "predicho": {
+          "producto": "soportes para monitor",
+          "cantidad": 6,
+          "precio_unitario": 9990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_pendrive",
+        "esperado": {
+          "producto": "pendrives de 64GB",
+          "cantidad": 2,
+          "precio_unitario": 8990
+        },
+        "predicho": {
+          "producto": "pendrives de 64gb",
+          "cantidad": 2,
+          "precio_unitario": 8990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_silla_ergo",
+        "esperado": {
+          "producto": "silla ergonómica",
+          "cantidad": 1,
+          "precio_unitario": 219990
+        },
+        "predicho": {
+          "producto": "silla ergonómica",
+          "cantidad": 1,
+          "precio_unitario": 219990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_cargador_total",
+        "esperado": {
+          "producto": "cargadores USB-C",
+          "cantidad": 5,
+          "precio_unitario": 9990
+        },
+        "predicho": {
+          "producto": "cargadores usb-c",
+          "cantidad": 5,
+          "precio_unitario": 9990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      },
+      {
+        "id": "factura_notebook",
+        "esperado": {
+          "producto": "notebook Lenovo de 15 pulgadas",
+          "cantidad": 1,
+          "precio_unitario": 459990
+        },
+        "predicho": {
+          "producto": "notebook lenovo de 15 pulgadas",
+          "cantidad": 1,
+          "precio_unitario": 459990
+        },
+        "coincidencias": {
+          "producto": true,
+          "cantidad": true,
+          "precio_unitario": true
+        },
+        "correcto": true
+      }
+    ]
+  }
+}

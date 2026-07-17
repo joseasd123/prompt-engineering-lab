@@ -1,6 +1,6 @@
 """Pure unit tests for JSON-response parsing — no network calls / API key required."""
 
-from evaluate import parsear_categoria
+from .evaluate import parsear_categoria
 
 
 def test_parsear_categoria_json_valido():

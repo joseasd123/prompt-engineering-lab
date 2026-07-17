@@ -1,0 +1,152 @@
+# Casos de prueba para el Proyecto B (extractor de datos).
+#
+# Cada caso trae el texto de entrada y el JSON esperado (gold standard,
+# etiquetado a mano). "producto" se etiquetó tal cual aparece en el texto
+# (sin normalizar a singular) para que el matching sea confiable — ver la
+# nota sobre esto en evaluate.py / docs.
+#
+# 5 de los 20 casos NO dan el precio unitario directamente: dan el total de
+# varias unidades y el modelo tiene que calcular total / cantidad. Sirven
+# para medir si el few-shot (que muestra un ejemplo resuelto así) ayuda de
+# verdad en ese caso más difícil.
+
+casos:
+  - id: factura_teclado
+    entrada: "Compré 3 teclados mecánicos a $45.990 cada uno"
+    esperado:
+      producto: "teclados mecánicos"
+      cantidad: 3
+      precio_unitario: 45990
+
+  - id: factura_mouse
+    entrada: "un mouse inalámbrico, salió $12.500"
+    esperado:
+      producto: "mouse inalámbrico"
+      cantidad: 1
+      precio_unitario: 12500
+
+  - id: factura_monitor
+    entrada: "2 monitores LG por $189.990 c/u"
+    esperado:
+      producto: "monitores LG"
+      cantidad: 2
+      precio_unitario: 189990
+
+  - id: factura_silla_total
+    entrada: "Compré 2 sillas de oficina, pagué $159.980 en total"
+    esperado:
+      producto: "sillas de oficina"
+      cantidad: 2
+      precio_unitario: 79990
+
+  - id: factura_impresora
+    entrada: "Una impresora láser me costó $89.990"
+    esperado:
+      producto: "impresora láser"
+      cantidad: 1
+      precio_unitario: 89990
+
+  - id: factura_audifonos
+    entrada: "Compré 4 audífonos bluetooth a $15.990 cada uno"
+    esperado:
+      producto: "audífonos bluetooth"
+      cantidad: 4
+      precio_unitario: 15990
+
+  - id: factura_webcam_total
+    entrada: "3 webcams HD, el total fue $89.970"
+    esperado:
+      producto: "webcams HD"
+      cantidad: 3
+      precio_unitario: 29990
+
+  - id: factura_cable
+    entrada: "Necesité 5 cables HDMI, cada uno $3.990"
+    esperado:
+      producto: "cables HDMI"
+      cantidad: 5
+      precio_unitario: 3990
+
+  - id: factura_disco
+    entrada: "Un disco duro externo de 1TB, $54.990"
+    esperado:
+      producto: "disco duro externo de 1TB"
+      cantidad: 1
+      precio_unitario: 54990
+
+  - id: factura_silla_gamer
+    entrada: "Compré dos sillas gamer a $129.990 cada una"
+    esperado:
+      producto: "sillas gamer"
+      cantidad: 2
+      precio_unitario: 129990
+
+  - id: factura_router_total
+    entrada: "Compré 2 routers wifi, en total pagué $79.980"
+    esperado:
+      producto: "routers wifi"
+      cantidad: 2
+      precio_unitario: 39990
+
+  - id: factura_lampara
+    entrada: "Una lámpara de escritorio LED me salió en $17.990"
+    esperado:
+      producto: "lámpara de escritorio LED"
+      cantidad: 1
+      precio_unitario: 17990
+
+  - id: factura_mochila
+    entrada: "Compré tres mochilas para notebook a $24.990 cada una"
+    esperado:
+      producto: "mochilas para notebook"
+      cantidad: 3
+      precio_unitario: 24990
+
+  - id: factura_parlante_total
+    entrada: "4 parlantes bluetooth, pagué $199.960 en total"
+    esperado:
+      producto: "parlantes bluetooth"
+      cantidad: 4
+      precio_unitario: 49990
+
+  - id: factura_teclado_rgb
+    entrada: "Un teclado mecánico RGB, $52.990"
+    esperado:
+      producto: "teclado mecánico RGB"
+      cantidad: 1
+      precio_unitario: 52990
+
+  - id: factura_soporte
+    entrada: "Compré 6 soportes para monitor a $9.990 cada uno"
+    esperado:
+      producto: "soportes para monitor"
+      cantidad: 6
+      precio_unitario: 9990
+
+  - id: factura_pendrive
+    entrada: "2 pendrives de 64GB, $8.990 cada uno"
+    esperado:
+      producto: "pendrives de 64GB"
+      cantidad: 2
+      precio_unitario: 8990
+
+  - id: factura_silla_ergo
+    entrada: "Una silla ergonómica, pagué $219.990"
+    esperado:
+      producto: "silla ergonómica"
+      cantidad: 1
+      precio_unitario: 219990
+
+  - id: factura_cargador_total
+    entrada: "Compré 5 cargadores USB-C, el total fue $49.950"
+    esperado:
+      producto: "cargadores USB-C"
+      cantidad: 5
+      precio_unitario: 9990
+
+  - id: factura_notebook
+    entrada: "Un notebook Lenovo de 15 pulgadas me costó $459.990"
+    esperado:
+      producto: "notebook Lenovo de 15 pulgadas"
+      cantidad: 1
+      precio_unitario: 459990
