@@ -56,6 +56,10 @@ python examples/chat.py
 
 Abre un loop de conversación (mantiene el historial de mensajes); escribe `salir` para terminar.
 
+## Proyectos
+
+- [`projects/proyecto_a_clasificador_tickets/`](projects/proyecto_a_clasificador_tickets/) — **Proyecto A: clasificador de tickets de soporte.** Clasifica texto libre en una de 5 categorías (facturación, soporte técnico, cuenta/acceso, cancelación, otro) con salida JSON estructurada. Compara 3 versiones de prompt (zero-shot mínimo → zero-shot guiado con taxonomía → few-shot) contra 50 tickets etiquetados a mano, midiendo accuracy, costo y tokens de cada versión. Correr con `python projects/proyecto_a_clasificador_tickets/evaluate.py`.
+
 ## Experimentos
 
 - [`experiments/exp00_verificar_keys_colab.py`](experiments/exp00_verificar_keys_colab.py) — pensado para pegar en Google Colab. Prueba que tus keys de Groq, OpenAI y Hugging Face funcionen con una llamada mínima a cada una, sin gastar apenas tokens. Lee las keys de Colab Secrets (🔑) o las pide oculta con `getpass` si falta alguna.
@@ -66,6 +70,7 @@ Abre un loop de conversación (mantiene el historial de mensajes); escribe `sali
 ## Material de estudio
 
 - [`docs/leccion-01-cliente-api.md`](docs/leccion-01-cliente-api.md) — lección que explica el diseño del cliente pieza por pieza (secretos/.env, wrapper, errores, backoff, tokens, costo, parámetros de generación, zero-shot vs few-shot, evaluación con métricas).
+- [`docs/proyecto-a-clasificador-tickets.md`](docs/proyecto-a-clasificador-tickets.md) — recorrido paso a paso del Proyecto A (clasificador de tickets) y los resultados reales de correrlo: por qué v1 falla, por qué v2 da el salto grande, y por qué v3 (few-shot) no mejora pero cuesta más tokens.
 - [`docs/quiz.html`](docs/quiz.html) — quiz de 13 preguntas con feedback instantáneo. Ábrelo con doble clic en el navegador.
 
 ## Tests

@@ -1,0 +1,929 @@
+{
+  "v1_zero_shot_minimo": {
+    "accuracy": 0.02,
+    "aciertos": 1,
+    "total": 50,
+    "costo_usd": 0.0,
+    "tokens_prom": 105.8,
+    "detalle": [
+      {
+        "id": "t001",
+        "esperado": "facturacion",
+        "predicho": "facturación y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t002",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t003",
+        "esperado": "facturacion",
+        "predicho": "configuración de pago",
+        "correcto": false
+      },
+      {
+        "id": "t004",
+        "esperado": "facturacion",
+        "predicho": "facturación y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t005",
+        "esperado": "facturacion",
+        "predicho": "facturación y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t006",
+        "esperado": "facturacion",
+        "predicho": "tarjetas y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t007",
+        "esperado": "facturacion",
+        "predicho": "facturación y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t008",
+        "esperado": "facturacion",
+        "predicho": "pagos y suscripciones",
+        "correcto": false
+      },
+      {
+        "id": "t009",
+        "esperado": "facturacion",
+        "predicho": "facturación y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t010",
+        "esperado": "facturacion",
+        "predicho": "facturación y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t011",
+        "esperado": "soporte_tecnico",
+        "predicho": "problemas técnicos",
+        "correcto": false
+      },
+      {
+        "id": "t012",
+        "esperado": "soporte_tecnico",
+        "predicho": "problemas técnicos",
+        "correcto": false
+      },
+      {
+        "id": "t013",
+        "esperado": "soporte_tecnico",
+        "predicho": "rendimiento",
+        "correcto": false
+      },
+      {
+        "id": "t014",
+        "esperado": "soporte_tecnico",
+        "predicho": "problemas de exportación de datos",
+        "correcto": false
+      },
+      {
+        "id": "t015",
+        "esperado": "soporte_tecnico",
+        "predicho": "sincronización",
+        "correcto": false
+      },
+      {
+        "id": "t016",
+        "esperado": "soporte_tecnico",
+        "predicho": "técnico",
+        "correcto": false
+      },
+      {
+        "id": "t017",
+        "esperado": "soporte_tecnico",
+        "predicho": "busqueda y indexacion",
+        "correcto": false
+      },
+      {
+        "id": "t018",
+        "esperado": "soporte_tecnico",
+        "predicho": "notificaciones y alertas",
+        "correcto": false
+      },
+      {
+        "id": "t019",
+        "esperado": "soporte_tecnico",
+        "predicho": "problemas técnicos",
+        "correcto": false
+      },
+      {
+        "id": "t020",
+        "esperado": "soporte_tecnico",
+        "predicho": "problemas técnicos",
+        "correcto": false
+      },
+      {
+        "id": "t021",
+        "esperado": "cuenta_acceso",
+        "predicho": "recuperación de cuenta",
+        "correcto": false
+      },
+      {
+        "id": "t022",
+        "esperado": "cuenta_acceso",
+        "predicho": "seguridad y acceso",
+        "correcto": false
+      },
+      {
+        "id": "t023",
+        "esperado": "cuenta_acceso",
+        "predicho": "seguridad y autenticación",
+        "correcto": false
+      },
+      {
+        "id": "t024",
+        "esperado": "cuenta_acceso",
+        "predicho": "problemas de acceso",
+        "correcto": false
+      },
+      {
+        "id": "t025",
+        "esperado": "cuenta_acceso",
+        "predicho": "configuración de cuenta",
+        "correcto": false
+      },
+      {
+        "id": "t026",
+        "esperado": "cuenta_acceso",
+        "predicho": "seguridad",
+        "correcto": false
+      },
+      {
+        "id": "t027",
+        "esperado": "cuenta_acceso",
+        "predicho": "seguridad",
+        "correcto": false
+      },
+      {
+        "id": "t028",
+        "esperado": "cuenta_acceso",
+        "predicho": "recuperación de cuenta",
+        "correcto": false
+      },
+      {
+        "id": "t029",
+        "esperado": "cuenta_acceso",
+        "predicho": "administración de cuentas",
+        "correcto": false
+      },
+      {
+        "id": "t030",
+        "esperado": "cuenta_acceso",
+        "predicho": "problemas de acceso y autenticación",
+        "correcto": false
+      },
+      {
+        "id": "t031",
+        "esperado": "cancelacion",
+        "predicho": "cancelación de suscripción",
+        "correcto": false
+      },
+      {
+        "id": "t032",
+        "esperado": "cancelacion",
+        "predicho": "cuenta y privacidad",
+        "correcto": false
+      },
+      {
+        "id": "t033",
+        "esperado": "cancelacion",
+        "predicho": "cambios en la cuenta o plan",
+        "correcto": false
+      },
+      {
+        "id": "t034",
+        "esperado": "cancelacion",
+        "predicho": "facturación y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t035",
+        "esperado": "cancelacion",
+        "predicho": "suscripciones y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t036",
+        "esperado": "cancelacion",
+        "predicho": "cierre de cuenta",
+        "correcto": false
+      },
+      {
+        "id": "t037",
+        "esperado": "cancelacion",
+        "predicho": "facturación y pagos",
+        "correcto": false
+      },
+      {
+        "id": "t038",
+        "esperado": "cancelacion",
+        "predicho": "problemas técnicos",
+        "correcto": false
+      },
+      {
+        "id": "t039",
+        "esperado": "cancelacion",
+        "predicho": "reactivación de cuenta",
+        "correcto": false
+      },
+      {
+        "id": "t040",
+        "esperado": "cancelacion",
+        "predicho": "gestión de cuentas y planes",
+        "correcto": false
+      },
+      {
+        "id": "t041",
+        "esperado": "otro",
+        "predicho": "planes y precios",
+        "correcto": false
+      },
+      {
+        "id": "t042",
+        "esperado": "otro",
+        "predicho": "comentario/feedback positivo",
+        "correcto": false
+      },
+      {
+        "id": "t043",
+        "esperado": "otro",
+        "predicho": "facturación",
+        "correcto": false
+      },
+      {
+        "id": "t044",
+        "esperado": "otro",
+        "predicho": "sugerencia de funcionalidad",
+        "correcto": false
+      },
+      {
+        "id": "t045",
+        "esperado": "otro",
+        "predicho": "actualizaciones de software",
+        "correcto": false
+      },
+      {
+        "id": "t046",
+        "esperado": "otro",
+        "predicho": "desarrollo e integración",
+        "correcto": false
+      },
+      {
+        "id": "t047",
+        "esperado": "otro",
+        "predicho": "legal",
+        "correcto": false
+      },
+      {
+        "id": "t048",
+        "esperado": "otro",
+        "predicho": "soporte multilingüe",
+        "correcto": false
+      },
+      {
+        "id": "t049",
+        "esperado": "otro",
+        "predicho": "sugerencias y mejoras",
+        "correcto": false
+      },
+      {
+        "id": "t050",
+        "esperado": "otro",
+        "predicho": "programas de fidelidad y referidos",
+        "correcto": false
+      }
+    ]
+  },
+  "v2_zero_shot_guiado": {
+    "accuracy": 0.96,
+    "aciertos": 48,
+    "total": 50,
+    "costo_usd": 0.0,
+    "tokens_prom": 257.5,
+    "detalle": [
+      {
+        "id": "t001",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t002",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t003",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t004",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t005",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t006",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t007",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t008",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t009",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t010",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t011",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t012",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t013",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t014",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t015",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t016",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t017",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t018",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t019",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t020",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t021",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t022",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t023",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t024",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t025",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t026",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t027",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t028",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t029",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t030",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t031",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t032",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t033",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t034",
+        "esperado": "cancelacion",
+        "predicho": "facturacion",
+        "correcto": false
+      },
+      {
+        "id": "t035",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t036",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t037",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t038",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t039",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t040",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t041",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t042",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t043",
+        "esperado": "otro",
+        "predicho": "facturacion",
+        "correcto": false
+      },
+      {
+        "id": "t044",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t045",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t046",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t047",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t048",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t049",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t050",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      }
+    ]
+  },
+  "v3_few_shot": {
+    "accuracy": 0.96,
+    "aciertos": 48,
+    "total": 50,
+    "costo_usd": 0.0,
+    "tokens_prom": 416.46,
+    "detalle": [
+      {
+        "id": "t001",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t002",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t003",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t004",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t005",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t006",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t007",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t008",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t009",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t010",
+        "esperado": "facturacion",
+        "predicho": "facturacion",
+        "correcto": true
+      },
+      {
+        "id": "t011",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t012",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t013",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t014",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t015",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t016",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t017",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t018",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t019",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t020",
+        "esperado": "soporte_tecnico",
+        "predicho": "soporte_tecnico",
+        "correcto": true
+      },
+      {
+        "id": "t021",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t022",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t023",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t024",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t025",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t026",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t027",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t028",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t029",
+        "esperado": "cuenta_acceso",
+        "predicho": "otro",
+        "correcto": false
+      },
+      {
+        "id": "t030",
+        "esperado": "cuenta_acceso",
+        "predicho": "cuenta_acceso",
+        "correcto": true
+      },
+      {
+        "id": "t031",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t032",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t033",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t034",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t035",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t036",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t037",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t038",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t039",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t040",
+        "esperado": "cancelacion",
+        "predicho": "cancelacion",
+        "correcto": true
+      },
+      {
+        "id": "t041",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t042",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t043",
+        "esperado": "otro",
+        "predicho": "facturacion",
+        "correcto": false
+      },
+      {
+        "id": "t044",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t045",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t046",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t047",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t048",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t049",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      },
+      {
+        "id": "t050",
+        "esperado": "otro",
+        "predicho": "otro",
+        "correcto": true
+      }
+    ]
+  }
+}
